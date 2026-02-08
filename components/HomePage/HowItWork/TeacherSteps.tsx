@@ -4,7 +4,6 @@ const Steps = () => {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto w-full">
-        {/* ADIM 1 */}
         <div className="flex flex-col gap-4 items-center text-center group">
           <div className="bg-white p-5 rounded-full shadow-lg text-blue-600 group-hover:scale-110 transition-transform duration-300">
             <svg
@@ -29,7 +28,6 @@ const Steps = () => {
           </p>
         </div>
 
-        {/* ADIM 2 */}
         <div className="flex flex-col gap-4 items-center text-center group">
           <div className="bg-white p-5 rounded-full shadow-lg text-blue-600 group-hover:scale-110 transition-transform duration-300">
             <svg
@@ -54,7 +52,6 @@ const Steps = () => {
           </p>
         </div>
 
-        {/* ADIM 3 */}
         <div className="flex flex-col gap-4 items-center text-center group">
           <div className="bg-white p-5 rounded-full shadow-lg text-blue-600 group-hover:scale-110 transition-transform duration-300">
             <svg
