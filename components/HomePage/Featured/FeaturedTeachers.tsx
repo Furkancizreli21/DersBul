@@ -1,4 +1,4 @@
-import { TeacherDetails } from "@/dummy-data/TeacherDummy";
+import { TeacherDetails } from "@/dummy-data/FeaturedTeachers";
 import TeachersSlider from "./TeachersSlider";
 
 const FeaturedTeachers = () => {

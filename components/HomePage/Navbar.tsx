@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const titles = ["Özel Ders Bul", "Ders Kategorileri", "Nasıl Çalışır?", "Öğretmen Ol", "Fiyatlandırma"];
+const titles = [
+  { title: "Özel Ders Bul", href: "/ozel-ders" },
+  { title: "Ders Kategorileri", href: "/kategoriler" },
+  { title: "Nasıl Çalışır?", href: "/nasil-calisir" },
+  { title: "Öğretmen Ol", href: "/ogretmen-ol" },
+  { title: "Fiyatlandırma", href: "/fiyatlandirma" },
+];
 
 const Navbar = () => {
   return (
@@ -14,8 +20,10 @@ const Navbar = () => {
       <ul className="flex gap-5 text-black ">
         {titles.map((title, i) => {
           return (
-            <li key={i} className="hover:text-blue-600 transition hover:cursor-pointer">
-              {title}
+            <li key={i}>
+              <Link href={title.href} className="hover:text-blue-600 transition hover:cursor-pointer">
+                {title.title}
+              </Link>
             </li>
           );
         })}
